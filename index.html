@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Bundles – Baby Clothing &amp; Newborn Gift Hamper Customizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍼 Little Bundles</h1>
+    <nav>
+      <a href="#builder">Build a Hamper</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Create the perfect newborn gift hamper</h2>
+    <p>Pick a basket, choose soft baby clothing, add a message, and see your total instantly.</p>
+    <a class="btn" href="#builder">Start customizing</a>
+  </section>
+
+  <main id="builder">
+    <div class="steps">
+      <section class="card">
+        <h3>1. Choose a basket</h3>
+        <div id="baskets" class="options"></div>
+      </section>
+
+      <section class="card">
+        <h3>2. Pick baby clothing</h3>
+        <label>Baby size
+          <select id="size">
+            <option>Newborn (0-3 months)</option>
+            <option>3-6 months</option>
+            <option>6-12 months</option>
+          </select>
+        </label>
+        <div id="clothes"></div>
+      </section>
+
+      <section class="card">
+        <h3>3. Add extras</h3>
+        <div id="extras"></div>
+      </section>
+
+      <section class="card">
+        <h3>4. Personalize</h3>
+        <label>Baby's name (optional)
+          <input type="text" id="babyName" placeholder="e.g. Aarav">
+        </label>
+        <label>Gift message
+          <textarea id="message" rows="3" placeholder="Welcome to the world, little one!"></textarea>
+        </label>
+      </section>
+    </div>
+
+    <aside class="card summary">
+      <h3>Your hamper</h3>
+      <ul id="summaryList"><li>Nothing selected yet.</li></ul>
+      <p class="total">Total: <span id="total">₹0</span></p>
+      <button class="btn" id="orderBtn">Place order</button>
+      <button class="btn secondary" id="resetBtn">Reset</button>
+      <p id="orderMsg" role="status"></p>
+    </aside>
+  </main>
+
+  <section id="about" class="about">
+    <h2>About us</h2>
+    <p>Little Bundles makes gifting for newborns simple. Every hamper is hand-packed with soft, skin-friendly clothing and wrapped with love.</p>
+  </section>
+
+  <footer id="contact">
+    <p>📧 hello@littlebundles.example &nbsp;|&nbsp; 📞 +91 00000 00000</p>
+    <p>© 2026 Little Bundles. A student project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
